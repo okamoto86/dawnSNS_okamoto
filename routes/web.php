@@ -26,7 +26,7 @@ Route::post('/login', 'Auth\LoginController@login');
 Route::get('/register', 'Auth\RegisterController@register');
 Route::post('/register', 'Auth\RegisterController@register');
 
-Route::get('/added', 'Auth\RegisterController@added');
+Route::get('/added', 'Auth\RegisterController@added')->name('added');
 
 
 //ログイン中のページ
@@ -38,6 +38,3 @@ Route::get('/search','UsersController@index');
 
 Route::get('/follow-list','PostsController@index');
 Route::get('/follower-list','PostsController@index');
-
-
-
