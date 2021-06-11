@@ -18,22 +18,26 @@
     <!--iphoneのアプリアイコン指定-->
     <link rel="apple-touch-icon-precomposed" href="画像のURL" />
     <!--OGPタグ/twitterカード-->
+
+    <!-- <script src="https://code.jqueqy.com/jquery-3.6.0.min.js"></script>
+    <script src="public/js/login.js"></script> -->
 </head>
 <body>
     <header>
         <div id = "head">
-        <h1><a><img src="images/logo.png"></a></h1>
-            <div id="">
-                <div id="">
-                    <p>〇〇さん<img src="images/arrow.png"></p>
-                <div>
-                <ul>
-                    <li><a href="/top">ホーム</a></li>
-                    <li><a href="/profile">プロフィール</a></li>
-                    <li><a href="/logout">ログアウト</a></li>
+        <h1><a href="/top"><img src="images/logo.png"></a></h1>
+            <div class="accordion">
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu-bar01">
+                    〇〇さん<img src="images/arrow.png">
+                </label>
+                <ul id="link01">
+                    <li class="bar-menu"><a href="/top">ホーム</a></li>
+                    <li class="bar-menu"><a href="/profile">プロフィール</a></li>
+                    <li class="bar-menu"><a href="/logout">ログアウト</a></li>
                 </ul>
-            </div>
-        </div>
+            </>
+        </label>
     </header>
     <div id="row">
         <div id="container">
@@ -58,7 +62,6 @@
     </div>
     <footer>
     </footer>
-    <script src="JavaScriptファイルのURL"></script>
-    <script src="JavaScriptファイルのURL"></script>
+
 </body>
 </html>
