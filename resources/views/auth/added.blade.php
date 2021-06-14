@@ -3,7 +3,7 @@
 @section('content')
 
 <div id="clear">
-<p>aaa</p>
+<p>{!! Session('name') !!}</p>
 <p>ようこそ！DAWNSNSへ！</p>
 <p>ユーザー登録が完了しました。</p>
 <p>さっそく、ログインをしてみましょう。</p>

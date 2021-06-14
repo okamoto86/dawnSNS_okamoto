@@ -29,12 +29,12 @@
             <div class="accordion">
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu-bar01">
-                    〇〇さん<img src="images/arrow.png">
+                    さん<img src="images/arrow.png">
                 </label>
                 <ul id="link01">
                     <li class="bar-menu"><a href="/top">ホーム</a></li>
                     <li class="bar-menu"><a href="/profile">プロフィール</a></li>
-                    <li class="bar-menu"><a href="/logout">ログアウト</a></li>
+                    <li class="bar-menu"><a href="/login">ログアウト</a></li>
                 </ul>
             </>
         </label>

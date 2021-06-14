@@ -80,15 +80,14 @@ class RegisterController extends Controller
             $data = $request->input();
 
             $this->create($data);
-            return view('auth.added');
+            $id = $request->input('id');
+            return redirect('added')->with('name', $data['username']);
         }
         return view('auth.register');
     }
 
     // 登録完了フォームでユーザー名を表示する
-    public function added(Request $data){
-        // $list = \DB::table('users')->where('id',1)->first();
-        // return view('auth.added')->with('name', $data['username']);
-        return redirect('auth.added')->with('name', $data['username']);
+    public function added(Request $oo){
+        return view('auth.added');
     }
 }
