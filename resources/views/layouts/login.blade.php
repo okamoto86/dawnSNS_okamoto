@@ -34,7 +34,7 @@
                 <ul id="link01">
                     <li class="bar-menu"><a href="/top">ホーム</a></li>
                     <li class="bar-menu"><a href="/profile">プロフィール</a></li>
-                    <li class="bar-menu"><a href="/login">ログアウト</a></li>
+                    <li class="bar-menu"><a href="{{route('user.logout')}}">ログアウト</a></li>
                 </ul>
             </>
         </label>

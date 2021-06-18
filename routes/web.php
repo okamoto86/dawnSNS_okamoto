@@ -38,3 +38,9 @@ Route::get('/search','UsersController@index');
 
 Route::get('/follow-list','PostsController@index');
 Route::get('/follower-list','PostsController@index');
+
+// ログアウト（6/14）
+Route::get('/auth/login', [
+  'uses' => 'UsersController@getLogout',
+  'as' => 'user.logout'
+]);
