@@ -20,9 +20,9 @@ class UsersController extends Controller
         return view('users.search');
     }
 
-    // ログアウト機能（6/14）
-    public function getLogout(){
+    // ログアウト機能（6/1８）
+    public function loggedOut(\Illuminate\Http\Request $request){
         Auth::logout();
-        return redirect('/auth/login');
+        return redirect('login');
     }
 }
